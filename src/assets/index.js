@@ -16,7 +16,6 @@ import inmigracionprofesionales from "../assets/inmigracionprofesionales.jpg"
 import solucionestranfronterizas from "../assets/solucionestranfronterizas.png"
 import sportsinmigration from "../assets/sportsinmigration.jpg"
 import gestionderiegsomigratoios from "../assets/gestionderiegsomigratoios.jpg"
-import Logov2 from "../assets/Logov2.png"
 import logoletras from "../assets/logoletras.png"
 import logoestatua from "../assets/logoestatua.png"
 
@@ -38,7 +37,6 @@ export {
   solucionestranfronterizas,
   sportsinmigration,
   gestionderiegsomigratoios,
-  Logov2,
   logoletras,
   logoestatua
 };
