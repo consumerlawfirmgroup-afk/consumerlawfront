@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
-import { LogoSaul } from "../../../assets";
+import { logoletras, logoestatua } from "../../../assets";
 import { motion, AnimatePresence } from "framer-motion";
 import { useTranslation } from "react-i18next";
 import { services } from "../../../utils/servicesData";
@@ -33,13 +33,20 @@ export default function NavBarMain() {
      <>
     <nav className="w-full bg-white shadow-sm sticky top-10 z-50">
       <div className="w-full flex items-center justify-between h-20 px-4 md:px-8">
-      <div className="flex items-center">
-  <Link to="/">
-    <img
-      src={LogoSaul}
-      alt="Logo"
-      className="h-24 md:h-28 w-auto cursor-pointer -my-2" 
-    />
+<div className="flex items-center">
+  <Link to="/" className="flex items-center justify-center">
+    <div className="relative flex items-center">
+      <img
+        src={logoestatua}
+        alt="Logo Estatua"
+        className="h-36 md:h-20 w-auto cursor-pointer" 
+      />
+      <img
+        src={logoletras}
+        alt="Logo Letras"
+        className="h-20 md:h-16 w-auto cursor-pointer ml-1 mt-2" 
+      />
+    </div>
   </Link>
 </div>
         <button
