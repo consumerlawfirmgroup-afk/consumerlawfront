@@ -1,0 +1,8 @@
+name = "consumerlawfirmgroup"
+compatibility_date = "2025-09-03"
+compatibility_flags = []
+workers_dev = true
+
+# Configuration for Pages/static assets
+[site]
+bucket = "./dist"
