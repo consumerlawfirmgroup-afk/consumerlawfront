@@ -3,10 +3,5 @@ compatibility_date = "2025-09-03"
 compatibility_flags = []
 workers_dev = true
 
-# For static sites, you need to set main to point to a Worker script
-# or use the --no-bundle flag
-main = "./src/index.js"
-
-# Configuration for Pages/static assets
 [site]
 bucket = "./dist"
