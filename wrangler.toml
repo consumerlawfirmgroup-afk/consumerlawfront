@@ -3,5 +3,8 @@ compatibility_date = "2025-09-03"
 compatibility_flags = []
 workers_dev = true
 
+
+main = "workers-site/index.js"
+
 [site]
 bucket = "./dist"
