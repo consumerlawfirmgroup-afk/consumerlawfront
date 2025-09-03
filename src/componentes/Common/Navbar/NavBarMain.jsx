@@ -39,12 +39,12 @@ export default function NavBarMain() {
       <img
         src={logoestatua}
         alt="Logo Estatua"
-        className="h-36 md:h-20 w-auto cursor-pointer" 
+        className="h-16 sm:h-24 md:h-20 w-auto cursor-pointer" 
       />
       <img
         src={logoletras}
         alt="Logo Letras"
-        className="h-20 md:h-16 w-auto cursor-pointer ml-1 mt-2" 
+        className="h-12 sm:h-16 md:h-16 w-auto cursor-pointer ml-1 mt-2" 
       />
     </div>
   </Link>
