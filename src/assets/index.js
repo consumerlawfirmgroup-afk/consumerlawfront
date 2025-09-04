@@ -1,7 +1,18 @@
 import whatsappIcon from "../assets/icons8-whatsapp-240.svg";
 
-import testimonial from "../assets/testimonial.webp";
+import testimonial from "../assets/testimonial1.webp";
 import testimonial2 from "../assets/testimonial2.jpg";
+import testimonial3 from "../assets/testimonial3.jpg";
+import testimonial4 from "../assets/testimonial4.jpg";
+import testimonial5 from "../assets/testimonial5.webp";
+import testimonial6 from "../assets/testimonial6.jpg";
+import testimonial7 from "../assets/testimonial7.jpg";
+import testimonial8 from "../assets/testimonial8.jpg";
+import testimonial9 from "../assets/testimonial9.jpg";
+
+
+
+
 import facebook from "../assets/facebook.svg";
 import instagram from "../assets/instagram.svg";
 import tiktok from "../assets/tiktok.svg";
@@ -38,5 +49,12 @@ export {
   sportsinmigration,
   gestionderiegsomigratoios,
   logoletras,
-  logoestatua
+  logoestatua,
+  testimonial3,
+  testimonial4,
+  testimonial5,
+  testimonial6,
+  testimonial7,
+  testimonial8,
+  testimonial9,
 };
