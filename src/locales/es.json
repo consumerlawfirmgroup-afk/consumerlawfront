@@ -33,9 +33,9 @@
   "footer_lawfirm": "Consumer Law Firm",
   "footer_specialists": "Especialistas en defensa del consumidor en EE.UU.\nIntegridad, excelencia y resultados.",
   "footer_contact": "Contáctanos",
-  "footer_tel": "Tel: +1 (305) 456-7890",
-  "footer_email": "Email: info@consumerlawfirm.com",
-  "footer_address": "100 Biscayne Blvd, Miami, FL, USA",
+   "footer_tel": "Tel: +1 (204) 808-2986",
+  "footer_email": "Email: contact@consumerlawfirm.com",
+  "footer_address": "3700 Eagle Rock Blvd, Los Angeles, CA, USA",
   "footer_legal": "Aviso Legal",
   "footer_disclaimer": "La información en este sitio web es solo para fines informativos y no constituye asesoría legal. Para orientación personalizada, contáctenos directamente.",
   "footer_rights": "Todos los derechos reservados.",
@@ -555,5 +555,12 @@
   "testimonial_cta_title": "Tu historia de éxito comienza aquí",
   "testimonial_cta_desc": "Únete a las miles de familias que han logrado su sueño americano con nuestra ayuda",
   "why_trust_us": "¿Por qué confiar en nosotros?",
-  "start_consultation": "CONSULTA GRATUITA"
+  "start_consultation": "CONSULTA GRATUITA",
+
+  "global_managing_director": "Director Global",
+"litigation_director": "Directora de Litigios",
+"deportation_defense_chair": "Director de Defensa contra Deportación",
+"employment_visa_specialist": "Especialista en Visas de Empleo",
+"corporate_compliance_advisor": "Asesor de Cumplimiento Corporativo",
+"business_development_director": "Director de Desarrollo de Negocios"
 }

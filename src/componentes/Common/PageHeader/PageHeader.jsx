@@ -1,7 +1,6 @@
 import { motion } from "framer-motion";
 
 export default function PageHeader({ title, subtitle, titleSize }) {
-  // Clase de tamaño de título predeterminada con ajustes para dispositivos móviles y lg
   const titleSizeClass = titleSize || "text-4xl sm:text-4xl md:text-5xl lg:text-7xl";
 
   return (

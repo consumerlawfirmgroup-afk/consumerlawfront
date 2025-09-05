@@ -29,6 +29,13 @@ import sportsinmigration from "../assets/sportsinmigration.jpg"
 import gestionderiegsomigratoios from "../assets/gestionderiegsomigratoios.jpg"
 import logoletras from "../assets/logoletras.png"
 import logoestatua from "../assets/logoestatua.png"
+import abogados1 from "../assets/abogados1.png"
+import abogados2 from "../assets/abogados2.png"
+import abogados3 from "../assets/abogado3.png"
+import abogados4 from "../assets/abogados4.png"
+import abogados5 from "../assets/abogados5.png"
+import abogados6 from "../assets/abogados.png"
+import logoletraspng from "../assets/logoletraspng.png"
 
 export {
   whatsappIcon,
@@ -57,4 +64,11 @@ export {
   testimonial7,
   testimonial8,
   testimonial9,
+  abogados1,
+  abogados2,
+  abogados3,
+  abogados4,
+  abogados5,
+  abogados6,
+  logoletraspng
 };

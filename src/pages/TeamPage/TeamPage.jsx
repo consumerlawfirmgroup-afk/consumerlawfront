@@ -4,6 +4,7 @@ import { Link, useNavigate } from "react-router-dom";
 import { WhatsAppButton } from "../../componentes/Common/WhatsappButton/whatsApp-button";
 import { teamMembersCard } from "../../utils/TeamMembersData";
 import PageHeader from "../../componentes/Common/PageHeader/PageHeader";
+import { logoestatua, logoletraspng } from "../../assets"; 
 
 
 
@@ -99,18 +100,39 @@ export default function TeamPage() {
               className="group relative bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-2xl transition-all duration-300"
             >
               {/* Image Container */}
-              <div className="relative h-80 overflow-hidden bg-gradient-to-br from-blue-100 to-blue-50">
-                <div className="absolute inset-0 bg-blue-900 opacity-10 group-hover:opacity-20 transition-opacity duration-300"></div>
-                {/* Placeholder for image - replace with actual images */}
-                <div className="h-full w-full flex items-center justify-center">
-                  <div className="w-32 h-32 rounded-full bg-blue-200 flex items-center justify-center">
-                    <span className="text-4xl font-bold text-blue-600">
-                      {member.name.split(' ').map(n => n[0]).join('')}
-                    </span>
-                  </div>
-                </div>
-              </div>
-
+   {/* Image Container - Restructured */}
+<div className="relative bg-blue-50 rounded-t-xl flex flex-col items-center">
+<div className="w-full h-24 bg-blue-100 flex items-center justify-center">
+  {/* Solo el logo de letras, centrado y más grande */}
+  <div className="flex items-center justify-center">
+    <img
+      src={logoletraspng}
+      alt="Logo Consumer Law Firm"
+      className="h-26 w-auto"
+    />
+</div>
+  </div>
+  
+  {/* Image centered and overlapping */}
+  <div className="absolute top-6 w-44 h-44 rounded-full overflow-hidden border-4 border-white shadow-md bg-white">
+    {member.image ? (
+      <img 
+        src={member.image} 
+        alt={member.name}
+        className="w-full h-full object-cover object-center"
+      />
+    ) : (
+      <div className="h-full w-full flex items-center justify-center bg-blue-200">
+        <span className="text-4xl font-bold text-blue-600">
+          {member.name.split(' ').map(n => n[0]).join('')}
+        </span>
+      </div>
+    )}
+  </div>
+  
+  {/* Space to push content below the image */}
+  <div className="h-32"></div>
+</div>
               {/* Content */}
               <div className="p-6">
                 <h3 className="text-xl font-bold text-gray-900 mb-1">

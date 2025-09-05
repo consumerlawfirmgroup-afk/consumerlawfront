@@ -3,6 +3,8 @@ import { useTranslation } from "react-i18next";
 import { motion } from "framer-motion";
 import { getTeamMemberBySlug } from "../../utils/TeamMembersData";
 import { WhatsAppButton } from "../../componentes/Common/WhatsappButton/whatsApp-button";
+import { logoletraspng } from "../../assets";
+
 
 export default function TeamMemberProfile() {
   const { slug } = useParams();
@@ -53,13 +55,21 @@ export default function TeamMemberProfile() {
             className="flex flex-col lg:flex-row items-center lg:items-end gap-8"
           >
             {/* Profile Image */}
-            <div className="relative">
-              <div className="w-48 h-48 lg:w-64 lg:h-64 rounded-full bg-white p-2 shadow-2xl">
-                <div className="w-full h-full rounded-full bg-gradient-to-br from-blue-200 to-blue-100 flex items-center justify-center">
-                  <span className="text-5xl lg:text-6xl font-bold text-blue-600">
-                    {member.name.split(' ').map(n => n[0]).join('')}
-                  </span>
-                </div>
+         <div className="relative">
+              <div className="w-48 h-48 lg:w-64 lg:h-64 rounded-full bg-white p-2 shadow-2xl overflow-hidden">
+                {member.image ? (
+                  <img 
+                    src={member.image} 
+                    alt={member.name}
+                    className="w-full h-full rounded-full object-cover object-center"
+                  />
+                ) : (
+                  <div className="w-full h-full rounded-full bg-gradient-to-br from-blue-200 to-blue-100 flex items-center justify-center">
+                    <span className="text-5xl lg:text-6xl font-bold text-blue-600">
+                      {member.name.split(' ').map(n => n[0]).join('')}
+                    </span>
+                  </div>
+                )}
               </div>
               {/* Status Badge */}
               <div className="absolute bottom-4 right-4 bg-green-500 w-6 h-6 rounded-full border-4 border-white"></div>
