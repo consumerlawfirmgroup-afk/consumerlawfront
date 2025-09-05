@@ -106,22 +106,24 @@ export default function TeamMemberProfile() {
 
             {/* Quick Actions */}
             <div className="flex gap-3">
-              <a
-                href={`mailto:${member.email}`}
-                className="px-6 py-3 bg-white text-blue-600 rounded-lg hover:bg-blue-50 transition-colors font-medium"
-              >
-                {t("send_email", "Enviar Email")}
-              </a>
-              {member.linkedIn && (
-                <a
-                  href={member.linkedIn}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="px-6 py-3 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition-colors font-medium"
-                >
-                  LinkedIn
-                </a>
-              )}
+
+                    {/* Contact Buttons */}
+                <div className="flex gap-2">
+                  <a 
+                    href={`mailto:${member.email}`}
+                    className="flex-1 text-center py-2 px-3 bg-blue-50 text-blue-600 rounded-lg hover:bg-blue-100 transition-colors text-sm font-medium"
+                  >
+                    {t("contact_email", "Email")}
+                  </a>
+              <WhatsAppButton
+                    phone={member.whatsapp || member.phone}
+                    text={t("contact_whatsapp", "WhatsApp")}
+                    className="flex-1"
+                    variant="inline"
+                  />
+                </div>
+         
+            
             </div>
           </motion.div>
         </div>

@@ -36,6 +36,11 @@ import abogados4 from "../assets/abogados4.png"
 import abogados5 from "../assets/abogados5.png"
 import abogados6 from "../assets/abogados.png"
 import logoletraspng from "../assets/logoletraspng.png"
+import permisolaburo from "../assets/permisolaburo.webp"
+import residenciaperma from "../assets/residenciapermanetne.jpeg"
+import aseroramiento from "../assets/asesoramiento.webp"
+
+
 
 export {
   whatsappIcon,
@@ -70,5 +75,8 @@ export {
   abogados4,
   abogados5,
   abogados6,
-  logoletraspng
+  logoletraspng,
+  permisolaburo,
+  residenciaperma,
+  aseroramiento
 };
