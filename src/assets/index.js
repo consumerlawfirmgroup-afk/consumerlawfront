@@ -9,8 +9,11 @@ import testimonial6 from "../assets/testimonial6.jpg";
 import testimonial7 from "../assets/testimonial7.jpg";
 import testimonial8 from "../assets/testimonial8.jpg";
 import testimonial9 from "../assets/testimonial9.jpg";
-
-
+import testimonial10 from "../assets/testimonial11.webp";
+import testimonial11 from "../assets/testimonial12.jpg";
+import testimonial12 from "../assets/testimonial13.jpg";
+import testimonial13 from "../assets/testimonial14.jpg";
+import testimonial15 from "../assets/testimonial15.png";
 
 
 import facebook from "../assets/facebook.svg";
@@ -69,6 +72,11 @@ export {
   testimonial7,
   testimonial8,
   testimonial9,
+  testimonial10,
+  testimonial11,
+  testimonial12,
+  testimonial13,
+  testimonial15,
   abogados1,
   abogados2,
   abogados3,

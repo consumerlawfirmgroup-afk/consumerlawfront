@@ -7,8 +7,12 @@ import {
   testimonial6,
   testimonial7,
   testimonial8,
-  testimonial9
-
+  testimonial9,
+  testimonial10,
+  testimonial11,
+  testimonial12,
+  testimonial13,
+  testimonial15,
 } from "../assets";
 
 
@@ -102,6 +106,51 @@ export const testimonials = [
     testimonial_en: "My asylum case was successful thanks to their experience and dedication. I felt supported at all times.",
     rating: 5,
     imgUrl: testimonial2,
+  },
+    {
+    id: 14,
+    name: "María Fernanda R.",
+    location: "Tampa, FL",
+    testimonial: "Como madre sola con dos hijos, su equipo hizo posible nuestra residencia. Nos guiaron con paciencia y humanidad.",
+    testimonial_en: "As a single mother with two children, their team made our residency possible. They guided us with patience and humanity.",
+    rating: 5,
+    imgUrl: testimonial10,
+  },
+  {
+    id: 15,
+    name: "Elena V.",
+    location: "San Antonio, TX",
+    testimonial: "Gracias a su ayuda, pude traer a mis dos hijas y hoy estamos juntas construyendo un futuro seguro.",
+    testimonial_en: "Thanks to their help, I was able to bring my two daughters and today we are together building a safe future.",
+    rating: 5,
+    imgUrl: testimonial11,
+  },
+  {
+    id: 16,
+    name: "Carlos y Daniela M.",
+    location: "Denver, CO",
+    testimonial: "Nuestro proceso de ajuste de estatus como pareja fue claro y sin estrés. Siempre respondieron nuestras dudas rápido.",
+    testimonial_en: "Our adjustment of status process as a couple was clear and stress-free. They always answered our questions quickly.",
+    rating: 5,
+    imgUrl: testimonial12,
+  },
+  {
+    id: 17,
+    name: "Rosa y Lucía H.",
+    location: "Las Vegas, NV",
+    testimonial: "Madre e hija reunidas después de años. Su equipo manejó la petición familiar impecablemente.",
+    testimonial_en: "Mother and daughter reunited after years. Their team handled the family petition impeccably.",
+    rating: 5,
+    imgUrl: testimonial13,
+  },
+  {
+    id: 18,
+    name: "Leticia S.",
+    location: "Atlanta, GA",
+    testimonial: "Obtuve la residencia y aseguré el futuro de mi hijo. Trato cálido y estratégico desde el primer día.",
+    testimonial_en: "I obtained residency and secured my son's future. Warm and strategic treatment from day one.",
+    rating: 5,
+    imgUrl: testimonial15,
   },
 
 ];
