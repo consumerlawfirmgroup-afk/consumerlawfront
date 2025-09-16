@@ -33,7 +33,7 @@ export default function ContactUsSection() {
     setSubmitStatus(null);
     
     try {
-      const response = await fetch('https://consumerlaw.zeabur.app/api/contact', {
+      const response = await fetch('http://localhost:8080/api/contact', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
