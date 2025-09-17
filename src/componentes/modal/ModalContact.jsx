@@ -23,7 +23,7 @@ export default function ModalContact({ isOpen, onOpenChange }) {
     servicio: "",
   });
   const [isSubmitting, setIsSubmitting] = useState(false);
-  const [submitStatus, setSubmitStatus] = useState(null); // null, 'success', 'error'
+  const [submitStatus, setSubmitStatus] = useState(null); 
 
   const handleChange = (e) => {
     setForm({ ...form, [e.target.name]: e.target.value });
@@ -35,19 +35,17 @@ export default function ModalContact({ isOpen, onOpenChange }) {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-    
-    // Obtener el título traducido del servicio seleccionado
+  
     const selectedService = form.servicio 
       ? t(services.find(s => s.slug === form.servicio)?.titleKey || form.servicio)
       : "";
     
-    // Preparar los datos para el backend con el formato correcto
     const contactData = {
       name: form.nombre,
       email: form.email,
       phone: form.phone,
-      service: selectedService,  // Campo separado para el servicio
-      message: form.mensaje      // Solo el mensaje original
+      service: selectedService,  
+      message: form.mensaje  
     };
     
     setIsSubmitting(true);

@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { useTranslation } from "react-i18next";
+import { services } from "../../../utils/servicesData";
 
 export default function ContactUsSection() {
   const { t } = useTranslation();
@@ -9,6 +10,7 @@ export default function ContactUsSection() {
     email: "",
     phone: "",
     message: "",
+    servicio: "",
   });
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [submitStatus, setSubmitStatus] = useState(null); // null, 'success', 'error'
@@ -20,12 +22,17 @@ export default function ContactUsSection() {
   const handleSubmit = async (e) => {
     e.preventDefault();
     
+    // Obtener el nombre del servicio traducido
+    const selectedService = form.servicio 
+      ? t(services.find(s => s.slug === form.servicio)?.titleKey || form.servicio)
+      : "";
+    
     // Preparar los datos para el backend con el formato correcto
     const contactData = {
       name: `${form.firstName} ${form.lastName}`,
       email: form.email,
       phone: form.phone,
-      service: "", // No hay selección de servicio en este formulario
+      service: selectedService,
       message: form.message
     };
     
@@ -58,6 +65,7 @@ export default function ContactUsSection() {
         email: "",
         phone: "",
         message: "",
+        servicio: "",
       });
       
     } catch (error) {
@@ -138,6 +146,20 @@ export default function ContactUsSection() {
                 required
                 disabled={isSubmitting}
               />
+              <select
+                name="servicio"
+                className="w-full border border-gray-300 rounded px-3 py-2 focus:outline-none focus:border-blue-500"
+                value={form.servicio}
+                onChange={handleChange}
+                disabled={isSubmitting}
+              >
+                <option value="">{t("select_service", "Selecciona un servicio")}</option>
+                {services.map((service) => (
+                  <option key={service.slug} value={service.slug}>
+                    {t(service.titleKey)}
+                  </option>
+                ))}
+              </select>
               <textarea
                 name="message"
                 placeholder={t("contact_message")}
@@ -157,7 +179,8 @@ export default function ContactUsSection() {
               </button>
             </form>
           </div>
-
+          
+          {/* ...existing code... */}
           <div className="bg-[#e9ecf3] p-8 md:p-12 flex flex-col justify-center">
             <h3 className="text-2xl font-bold text-blue-900 mb-2">
               {t("whychooseus_title")}
